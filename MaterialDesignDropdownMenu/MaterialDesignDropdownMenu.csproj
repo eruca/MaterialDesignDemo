@@ -7,6 +7,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Dirkster.AvalonDock.Themes.VS2013" Version="4.40.0" />
     <PackageReference Include="MaterialDesignThemes" Version="3.2.0" />
   </ItemGroup>
 

@@ -6,7 +6,7 @@
         xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
         xmlns:local="clr-namespace:MaterialDesignDropdownMenu"
         mc:Ignorable="d"
-        Title="下拉菜单" Height="450" Width="800" WindowStartupLocation="CenterScreen" WindowState="Maximized">
+        Title="下拉菜单" Height="600" Width="1024" WindowStartupLocation="CenterScreen">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
@@ -25,7 +25,7 @@
         <Grid HorizontalAlignment="Stretch" Grid.Row="1" Background="{StaticResource PrimaryHueMidBrush}">
             <Grid.RowDefinitions>
                 <RowDefinition Height="70"/>
-                <RowDefinition Height="326*"/>
+                <RowDefinition Height="*"/>
             </Grid.RowDefinitions>
             <Grid Grid.Row="0" Background="GhostWhite">
                 <Image Source="https://img.dotnet9.com/logo.png"/>
@@ -37,5 +37,18 @@
         <StackPanel x:Name="StackPanelMain" Grid.Row="1" Grid.Column="1" HorizontalAlignment="Stretch">
 
         </StackPanel>
+        <DockingManager Grid.Column="1" Grid.Row="1">
+            <LayoutRoot>
+                <LayoutRoot.RightSide>
+                    <LayoutAnchorSide>
+                        <LayoutAnchorGroup>
+                            <LayoutAnchorable Title="诊断" AutoHideWidth="300">
+                                <TextBox />
+                            </LayoutAnchorable>
+                        </LayoutAnchorGroup>
+                    </LayoutAnchorSide>
+                </LayoutRoot.RightSide>
+            </LayoutRoot>
+        </DockingManager>
     </Grid>
 </Window>

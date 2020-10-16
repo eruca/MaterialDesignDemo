@@ -7,31 +7,25 @@
              xmlns:local="clr-namespace:MaterialDesignDropdownMenu.UserControls"
              mc:Ignorable="d" 
              d:DesignHeight="80" d:DesignWidth="250">
+    
     <Grid Background="White" Width="250">
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="70" />
+            <ColumnDefinition Width="50" />
             <ColumnDefinition />
         </Grid.ColumnDefinitions>
-        <Rectangle  Width="10" Fill="YellowGreen" VerticalAlignment="Stretch"/>
-        <Border Background="YellowGreen" CornerRadius="50" Width="50" Height="50" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10 20 10 10">
-            <Border Background="White" CornerRadius="25" Width="25" Height="25" >
-                <materialDesign:PackIcon Kind="CheckBold" Width="25" Height="25" Foreground="Green" />
+        <Rectangle Width="5" Margin="0 0 10 0" Fill="YellowGreen" VerticalAlignment="Stretch"/>
+        <Border Background="YellowGreen" CornerRadius="20" Width="20" Height="20" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10 30 10 10">
+            <Border Background="White" CornerRadius="10" Width="10" Height="10" >
+                <materialDesign:PackIcon Kind="CheckBold" Width="10" Height="10" Foreground="Green" />
             </Border>
         </Border>
+        <TextBlock Background="LightGreen" Text="2020/05/27" Margin="10" Height="10" VerticalAlignment="Top" FontSize="6" />
         <StackPanel Grid.Column="1" Orientation="Vertical" Margin="0 5">
             <TextBlock Text="2020/05/27" />
-            <WrapPanel Margin="0 5">
-                <materialDesign:Chip Content="Hello" />
-                <materialDesign:Chip Content="Hello" />
-                <Button Style="{DynamicResource MaterialDesignRaisedButton}" Content="Hello" />
-                <Button Style="{DynamicResource MaterialDesignRaisedButton}" Content="Hello" />
-                <Button Style="{DynamicResource MaterialDesignRaisedButton}" Content="Hello" />
-                <Button Style="{DynamicResource MaterialDesignRaisedButton}" Content="Hello" />
-                <Button Style="{DynamicResource MaterialDesignRaisedButton}" Content="Hello" />
-                <Button Style="{DynamicResource MaterialDesignRaisedButton}" Content="Hello" />
-                <Button Style="{DynamicResource MaterialDesignRaisedButton}" Content="Hello" />
-                <Button Style="{DynamicResource MaterialDesignRaisedButton}" Content="Hello" />
-        </WrapPanel>            
+            <ListBox>
+                <ListBoxItem Content="高血压病" />
+                <ListBoxItem Content="2型糖尿病" />
+            </ListBox>          
         </StackPanel>
     </Grid>
 </UserControl>
